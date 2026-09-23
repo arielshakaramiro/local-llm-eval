@@ -1,10 +1,10 @@
-"""Fill the generated tables in README.md from the files the notebook writes to results/.
+"""Fill the generated tables in README.md and README.id.md from the files the notebook writes to results/.
 
 Usage, from the repository root:
 
     python scripts/update_readme.py
 
-Only the blocks between <!-- NAME:START --> and <!-- NAME:END --> are replaced.
+Only the blocks between <!-- NAME:START --> and <!-- NAME:END --> are replaced, in both READMEs.
 Hand-written parts are marked TODO in the README; they are left alone and reported.
 """
 from __future__ import annotations
@@ -68,17 +68,26 @@ def fill(readme_text: str, results_dir: Path) -> str:
 
 
 def main() -> None:
-    readme, results = ROOT / "README.md", ROOT / "results"
+    results = ROOT / "results"
+    readmes = [ROOT / "README.md", ROOT / "README.id.md"]
+
     try:
-        updated = fill(readme.read_text(encoding="utf-8"), results)
+        missing = missing_files(results)
+        if missing:
+            raise FileNotFoundError(f"missing in {results}: {', '.join(missing)}. Run the notebook first.")
+        for readme in readmes:
+            if not readme.exists():
+                raise FileNotFoundError(f"{readme.name} not found in {ROOT}")
+            readme.write_text(fill(readme.read_text(encoding="utf-8"), results), encoding="utf-8")
     except (FileNotFoundError, ValueError) as err:
         sys.exit(f"error: {err}")
-    readme.write_text(updated, encoding="utf-8")
 
-    todo_lines = [i for i, line in enumerate(updated.splitlines(), 1) if "TODO" in line]
-    print("README tables updated.")
-    if todo_lines:
-        print(f"Still to write by hand: {len(todo_lines)} TODO line(s), at README line(s) {todo_lines}")
+    print(f"Updated: {', '.join(r.name for r in readmes)}")
+    for readme in readmes:
+        todo_lines = [i for i, line in enumerate(readme.read_text(encoding="utf-8").splitlines(), 1)
+                      if "TODO" in line]
+        if todo_lines:
+            print(f"{readme.name}: still to write by hand: {len(todo_lines)} TODO line(s), at line(s) {todo_lines}")
 
 
 if __name__ == "__main__":

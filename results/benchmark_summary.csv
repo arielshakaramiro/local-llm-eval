@@ -1,0 +1,3 @@
+model,n,correct,accuracy_pct,ci95_low_pct,ci95_high_pct,mean_latency_s,mean_tokens_per_s,truncated
+Qwen2.5-1.5B Q8,30,20,66.7,48.8,80.8,0.2,214.0,0
+Qwen2.5-3B Q8,30,24,80.0,62.7,90.5,0.2,152.7,0

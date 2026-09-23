@@ -58,8 +58,16 @@ def test_environment_block_flags_cpu_only_build(tmp_path):
     assert "none (CPU only)" in block and "no (CPU-only build)" in block
 
 
-def test_repository_readme_has_every_marker_pair_and_the_figure():
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
-    for block in ur.ALL_BLOCKS:
-        assert f"<!-- {block}:START -->" in text and f"<!-- {block}:END -->" in text
-    assert "results/benchmark_accuracy.png" in text
+def test_repository_readmes_have_every_marker_pair_and_the_figure():
+    for name in ("README.md", "README.id.md"):
+        text = (ROOT / name).read_text(encoding="utf-8")
+        for block in ur.ALL_BLOCKS:
+            assert f"<!-- {block}:START -->" in text and f"<!-- {block}:END -->" in text, name
+        assert "results/benchmark_accuracy.png" in text, name
+
+
+def test_readmes_cross_link_each_other():
+    en = (ROOT / "README.md").read_text(encoding="utf-8")
+    idn = (ROOT / "README.id.md").read_text(encoding="utf-8")
+    assert "README.id.md" in en
+    assert "README.md" in idn
