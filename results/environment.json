@@ -1,0 +1,8 @@
+{
+  "python": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "gpu": "NVIDIA A100-SXM4-40GB, 40960 MiB",
+  "llama_cpp_python": "0.3.35",
+  "gpu_offload_supported": true,
+  "n_gpu_layers": -1
+}

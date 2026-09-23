@@ -1,0 +1,4 @@
+level,Qwen2.5-1.5B Q8,Qwen2.5-3B Q8
+easy,90.0,100.0
+medium,30.0,60.0
+hard,80.0,80.0
