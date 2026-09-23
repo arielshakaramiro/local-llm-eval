@@ -1,0 +1,492 @@
+[
+  {
+    "id": "q01",
+    "level": "easy",
+    "prompt": "Berapakah hasil dari 5 ditambah 3?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "\\b8\\b",
+        "delapan"
+      ]
+    ],
+    "example_correct": "5 ditambah 3 adalah 8.",
+    "example_wrong": "5 ditambah 3 adalah 9."
+  },
+  {
+    "id": "q02",
+    "level": "easy",
+    "prompt": "Apa ibu kota Prancis?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "paris"
+      ]
+    ],
+    "example_correct": "Ibu kota Prancis adalah Paris.",
+    "example_wrong": "Ibu kota Prancis adalah Lyon."
+  },
+  {
+    "id": "q03",
+    "level": "easy",
+    "prompt": "Berapa hasil 12 dikali 4?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "\\b48\\b",
+        "empat puluh delapan"
+      ]
+    ],
+    "example_correct": "Hasilnya 48.",
+    "example_wrong": "Hasilnya 46."
+  },
+  {
+    "id": "q04",
+    "level": "easy",
+    "prompt": "Jika ada 10 apel dan Anda mengambil 3, berapa apel yang tersisa?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "\\b7\\b",
+        "tujuh"
+      ]
+    ],
+    "example_correct": "Tersisa 7 apel.",
+    "example_wrong": "Tersisa 3 apel."
+  },
+  {
+    "id": "q05",
+    "level": "easy",
+    "prompt": "Planet apa yang paling dekat dengan Matahari?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "merkuri"
+      ]
+    ],
+    "example_correct": "Merkurius adalah planet terdekat dengan Matahari.",
+    "example_wrong": "Venus adalah planet terdekat."
+  },
+  {
+    "id": "q06",
+    "level": "easy",
+    "prompt": "Berapa jumlah hari dalam seminggu?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "\\b7\\b",
+        "tujuh"
+      ]
+    ],
+    "example_correct": "Ada 7 hari dalam seminggu.",
+    "example_wrong": "Ada 6 hari dalam seminggu."
+  },
+  {
+    "id": "q07",
+    "level": "easy",
+    "prompt": "Apa rumus kimia untuk air?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "h2o",
+        "h₂o"
+      ]
+    ],
+    "example_correct": "Rumus kimia air adalah H2O.",
+    "example_wrong": "Rumus kimia air adalah CO2."
+  },
+  {
+    "id": "q08",
+    "level": "easy",
+    "prompt": "Berapa hasil dari 100 dibagi 4?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "\\b25\\b",
+        "dua puluh lima"
+      ]
+    ],
+    "example_correct": "Hasilnya 25.",
+    "example_wrong": "Hasilnya 20."
+  },
+  {
+    "id": "q09",
+    "level": "easy",
+    "prompt": "Siapa presiden pertama Indonesia?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "soekarno",
+        "sukarno"
+      ]
+    ],
+    "example_correct": "Presiden pertama Indonesia adalah Soekarno.",
+    "example_wrong": "Presiden pertama Indonesia adalah Soeharto."
+  },
+  {
+    "id": "q10",
+    "level": "easy",
+    "prompt": "Bahasa pemrograman apa yang file-nya berekstensi .py?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "python"
+      ]
+    ],
+    "example_correct": "Bahasa pemrograman Python.",
+    "example_wrong": "Bahasa pemrograman Java."
+  },
+  {
+    "id": "q11",
+    "level": "medium",
+    "prompt": "Apa itu algoritma Merge Sort? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "bagi",
+        "pecah",
+        "dua bagian"
+      ],
+      [
+        "urut"
+      ],
+      [
+        "gabung",
+        "satukan"
+      ]
+    ],
+    "example_correct": "Merge Sort membagi data menjadi dua bagian, mengurutkan masing-masing, lalu menggabungkannya.",
+    "example_wrong": "Merge Sort adalah algoritma yang sangat cepat."
+  },
+  {
+    "id": "q12",
+    "level": "medium",
+    "prompt": "Apa hukum kedua Newton? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "gaya"
+      ],
+      [
+        "massa"
+      ],
+      [
+        "percepatan",
+        "akselerasi"
+      ]
+    ],
+    "example_correct": "Percepatan benda sebanding dengan gaya dan berbanding terbalik dengan massa (F = m a).",
+    "example_wrong": "Setiap aksi memiliki reaksi yang sama besar."
+  },
+  {
+    "id": "q13",
+    "level": "medium",
+    "prompt": "Apa itu fotosintesis? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "cahaya",
+        "matahari"
+      ],
+      [
+        "karbon dioksida",
+        "co2",
+        "co₂"
+      ],
+      [
+        "oksigen",
+        "glukosa",
+        "gula"
+      ]
+    ],
+    "example_correct": "Tumbuhan mengubah cahaya matahari, karbon dioksida, dan air menjadi glukosa dan oksigen.",
+    "example_wrong": "Fotosintesis adalah proses pernapasan pada hewan."
+  },
+  {
+    "id": "q14",
+    "level": "medium",
+    "prompt": "Apa itu API? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "antarmuka",
+        "interface"
+      ],
+      [
+        "aplikasi",
+        "perangkat lunak",
+        "software",
+        "program"
+      ]
+    ],
+    "example_correct": "API (Application Programming Interface) adalah antarmuka yang memungkinkan aplikasi saling berkomunikasi.",
+    "example_wrong": "API adalah jenis database."
+  },
+  {
+    "id": "q15",
+    "level": "medium",
+    "prompt": "Apa perbedaan RAM dan penyimpanan (storage)? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "\\bram\\b"
+      ],
+      [
+        "sementara",
+        "volatile",
+        "hilang"
+      ],
+      [
+        "permanen",
+        "non-volatile",
+        "tidak hilang",
+        "jangka panjang"
+      ]
+    ],
+    "example_correct": "RAM menyimpan data sementara dan hilang saat komputer mati, sedangkan penyimpanan menyimpan data secara permanen.",
+    "example_wrong": "RAM dan storage sama saja."
+  },
+  {
+    "id": "q16",
+    "level": "medium",
+    "prompt": "Apa itu inflasi dalam ekonomi? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "harga"
+      ],
+      [
+        "naik",
+        "kenaikan",
+        "meningkat"
+      ]
+    ],
+    "example_correct": "Inflasi adalah kenaikan harga barang dan jasa secara umum dan terus-menerus.",
+    "example_wrong": "Inflasi adalah penurunan nilai saham."
+  },
+  {
+    "id": "q17",
+    "level": "medium",
+    "prompt": "Apa fungsi mitokondria dalam sel?",
+    "max_tokens": 220,
+    "must": [
+      [
+        "energi",
+        "\\batp\\b"
+      ],
+      [
+        "menghasilkan",
+        "penghasil",
+        "memproduksi",
+        "pembangkit",
+        "respirasi"
+      ]
+    ],
+    "example_correct": "Mitokondria menghasilkan energi (ATP) bagi sel melalui respirasi seluler.",
+    "example_wrong": "Mitokondria menyimpan informasi genetik utama sel."
+  },
+  {
+    "id": "q18",
+    "level": "medium",
+    "prompt": "Apa itu overfitting dalam machine learning?",
+    "max_tokens": 220,
+    "must": [
+      [
+        "data latih",
+        "data pelatihan",
+        "data training",
+        "training"
+      ],
+      [
+        "generalisasi",
+        "data baru",
+        "data uji",
+        "data tes",
+        "belum pernah"
+      ]
+    ],
+    "example_correct": "Overfitting terjadi ketika model terlalu menghafal data latih sehingga buruk dalam generalisasi pada data baru.",
+    "example_wrong": "Overfitting adalah ketika model terlalu sederhana."
+  },
+  {
+    "id": "q19",
+    "level": "medium",
+    "prompt": "Sebutkan tiga wujud zat beserta contohnya.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "padat"
+      ],
+      [
+        "cair"
+      ],
+      [
+        "\\bgas\\b"
+      ]
+    ],
+    "example_correct": "Padat (batu), cair (air), dan gas (uap).",
+    "example_wrong": "Padat dan cair."
+  },
+  {
+    "id": "q20",
+    "level": "medium",
+    "prompt": "Apa itu 'transformer' dalam konteks model bahasa (LLM)? Jelaskan secara singkat.",
+    "max_tokens": 220,
+    "must": [
+      [
+        "attention",
+        "perhatian"
+      ],
+      [
+        "arsitektur",
+        "model",
+        "jaringan"
+      ]
+    ],
+    "example_correct": "Transformer adalah arsitektur jaringan saraf yang memakai mekanisme attention untuk memahami hubungan antar kata.",
+    "example_wrong": "Transformer adalah perangkat listrik yang mengubah tegangan."
+  },
+  {
+    "id": "q21",
+    "level": "hard",
+    "prompt": "Jika semua kucing adalah hewan, dan semua hewan membutuhkan air, apakah semua kucing membutuhkan air? Awali jawaban dengan 'Ya' atau 'Tidak', lalu beri satu kalimat alasan.",
+    "max_tokens": 96,
+    "must": [
+      [
+        "^\\W*ya\\b"
+      ]
+    ],
+    "example_correct": "Ya, karena kucing adalah hewan dan semua hewan butuh air.",
+    "example_wrong": "Tidak, karena tidak semua kucing membutuhkan air."
+  },
+  {
+    "id": "q22",
+    "level": "hard",
+    "prompt": "Kereta berangkat pukul 08.15 dan tiba pukul 11.45. Berapa lama perjalanannya?",
+    "max_tokens": 200,
+    "must": [
+      [
+        "3\\s*jam\\s*30\\s*menit",
+        "3[.,]5\\s*jam",
+        "tiga setengah jam",
+        "210\\s*menit"
+      ]
+    ],
+    "example_correct": "Perjalanan berlangsung 3 jam 30 menit.",
+    "example_wrong": "Perjalanan berlangsung 4 jam."
+  },
+  {
+    "id": "q23",
+    "level": "hard",
+    "prompt": "Ali lebih tinggi dari Budi. Budi lebih tinggi dari Citra. Siapa yang paling pendek?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "citra"
+      ]
+    ],
+    "example_correct": "Citra yang paling pendek.",
+    "example_wrong": "Ali yang paling pendek.",
+    "forbid": [
+      "(ali|budi)\\s+(adalah\\s+)?(yang\\s+)?paling\\s+pendek"
+    ]
+  },
+  {
+    "id": "q24",
+    "level": "hard",
+    "prompt": "Sebuah toko memberi diskon 20% pada barang seharga Rp200.000. Berapa harga setelah diskon?",
+    "max_tokens": 200,
+    "must": [
+      [
+        "160[.,]?000",
+        "160 ribu"
+      ]
+    ],
+    "example_correct": "Harga setelah diskon Rp160.000.",
+    "example_wrong": "Harga setelah diskon Rp180.000."
+  },
+  {
+    "id": "q25",
+    "level": "hard",
+    "prompt": "Jika 3 pekerja menyelesaikan sebuah pekerjaan dalam 12 hari, berapa hari yang dibutuhkan 6 pekerja dengan kecepatan kerja yang sama?",
+    "max_tokens": 200,
+    "must": [
+      [
+        "\\b6\\s*hari\\b",
+        "enam hari"
+      ]
+    ],
+    "example_correct": "Butuh 6 hari.",
+    "example_wrong": "Butuh 24 hari."
+  },
+  {
+    "id": "q26",
+    "level": "hard",
+    "prompt": "Pada deret 2, 4, 8, 16, berapakah angka berikutnya?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "\\b32\\b",
+        "tiga puluh dua"
+      ]
+    ],
+    "example_correct": "Angka berikutnya 32.",
+    "example_wrong": "Angka berikutnya 24."
+  },
+  {
+    "id": "q27",
+    "level": "hard",
+    "prompt": "Budi punya 5 kelereng. Ani punya 3 kali lipat kelereng Budi. Berapa total kelereng mereka berdua?",
+    "max_tokens": 200,
+    "must": [
+      [
+        "\\b20\\b",
+        "dua puluh"
+      ]
+    ],
+    "example_correct": "Total 20 kelereng.",
+    "example_wrong": "Total 15 kelereng."
+  },
+  {
+    "id": "q28",
+    "level": "hard",
+    "prompt": "Jika hari ini Rabu, hari apa 10 hari lagi?",
+    "max_tokens": 96,
+    "must": [
+      [
+        "sabtu"
+      ]
+    ],
+    "example_correct": "Sepuluh hari lagi adalah hari Sabtu.",
+    "example_wrong": "Sepuluh hari lagi adalah hari Jumat."
+  },
+  {
+    "id": "q29",
+    "level": "hard",
+    "prompt": "Sebuah persegi panjang memiliki panjang 8 cm dan lebar 5 cm. Berapa luas dan kelilingnya?",
+    "max_tokens": 200,
+    "must": [
+      [
+        "\\b40\\b"
+      ],
+      [
+        "\\b26\\b"
+      ]
+    ],
+    "example_correct": "Luas 40 cm² dan keliling 26 cm.",
+    "example_wrong": "Luas 40 cm² dan keliling 13 cm."
+  },
+  {
+    "id": "q30",
+    "level": "hard",
+    "prompt": "Rina lebih tua dari Sinta. Sinta lebih tua dari Tono. Tono berusia 10 tahun dan Sinta berusia 15 tahun. Apakah Rina pasti berusia lebih dari 15 tahun? Awali jawaban dengan 'Ya' atau 'Tidak', lalu beri satu kalimat alasan.",
+    "max_tokens": 96,
+    "must": [
+      [
+        "^\\W*ya\\b"
+      ]
+    ],
+    "example_correct": "Ya, karena Rina lebih tua dari Sinta yang berusia 15 tahun.",
+    "example_wrong": "Tidak, usia Rina belum diketahui."
+  }
+]

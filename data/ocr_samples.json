@@ -1,0 +1,82 @@
+[
+  {
+    "id": "s1",
+    "ocr_text": "Part No: ABC-123\nDescription: Gearbox Assembly\nMaterial: Steel\nQuantity: 5\nSupplier: XYZ Corp\nDimensions: 100x50x50 mm",
+    "truth": {
+      "part_no": "ABC-123",
+      "quantity": 5,
+      "has_anomaly": false
+    },
+    "note": "clean"
+  },
+  {
+    "id": "s2",
+    "ocr_text": "Part No: BRG-6204\nDescription: Deep Groove Ball Bearing\nMaterial: Chrome Steel\nQuantity: 40\nSupplier: Nusantara Bearings\nDimensions: 47x20x14 mm",
+    "truth": {
+      "part_no": "BRG-6204",
+      "quantity": 40,
+      "has_anomaly": false
+    },
+    "note": "clean"
+  },
+  {
+    "id": "s3",
+    "ocr_text": "Part No: SHF-450\nDescription: Drive Shaft\nMaterial: Alloy Steel\nQuantity: 12\nSupplier: PT Baja Mandiri\nDimensions: 35 x 450 mm",
+    "truth": {
+      "part_no": "SHF-450",
+      "quantity": 12,
+      "has_anomaly": false
+    },
+    "note": "clean"
+  },
+  {
+    "id": "s4",
+    "ocr_text": "Part No: BLT-M10-40\nDescription: Hex Bolt M10x40\nMaterial: Stainless Steel\nQuantity: 500\nSupplier: Fastener Jaya\nDimensions: M10 x 40 mm",
+    "truth": {
+      "part_no": "BLT-M10-40",
+      "quantity": 500,
+      "has_anomaly": false
+    },
+    "note": "clean"
+  },
+  {
+    "id": "s5",
+    "ocr_text": "Part No: XYZ-0O7\nDescription: Bearing 6204\nMaterial: \nQuantity: -2\nSupplier: \nDimensions: 47x20x14 mm",
+    "truth": {
+      "part_no": "XYZ-0O7",
+      "quantity": -2,
+      "has_anomaly": true
+    },
+    "note": "negative quantity, empty material and supplier, letter O inside part number"
+  },
+  {
+    "id": "s6",
+    "ocr_text": "Part No: PLT-88\nDescription: Steel Plate\nMaterial: Mild Steel\nQuantity: 0\nSupplier: PT Baja Mandiri\nDimensions: 0x0x0 mm",
+    "truth": {
+      "part_no": "PLT-88",
+      "quantity": 0,
+      "has_anomaly": true
+    },
+    "note": "zero quantity and zero dimensions"
+  },
+  {
+    "id": "s7",
+    "ocr_text": "Part No: GSK-201\nDescription: \nMaterial: Rubber\nQuantity: 25\nSupplier: Karet Sejahtera\nDimensions: ",
+    "truth": {
+      "part_no": "GSK-201",
+      "quantity": 25,
+      "has_anomaly": true
+    },
+    "note": "empty description and dimensions"
+  },
+  {
+    "id": "s8",
+    "ocr_text": "Part No: MTR-3PH\nDescription: Electric Motor 3-Phase 0.75 kW\nMaterial: Cast Iron\nQuantity: 2\nSupplier: Elektrik Prima\nDimensions: 220x180x160 mm\nWeight: 15000 kg",
+    "truth": {
+      "part_no": "MTR-3PH",
+      "quantity": 2,
+      "has_anomaly": true
+    },
+    "note": "implausible weight for a 0.75 kW motor (hard case)"
+  }
+]
