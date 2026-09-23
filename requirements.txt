@@ -1,0 +1,5 @@
+llama-cpp-python==0.3.35
+huggingface_hub>=0.23
+pandas>=2.0
+matplotlib>=3.7
+tabulate>=0.9

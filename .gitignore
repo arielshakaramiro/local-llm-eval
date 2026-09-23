@@ -1,0 +1,22 @@
+# Model weights and downloads
+models/
+*.gguf
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+
+# Local notes
+git-notes/
